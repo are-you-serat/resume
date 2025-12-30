@@ -17,13 +17,12 @@
 }
 
 body {
-    background-color: #FEF7FF; /* основной фон */
-    background-image: url('images/back.jpg'); /* изображение */
+    background-color: var(--md-sys-color-surface);
+    background-image: url('images/back.jpg');
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: cover; /* растягивает изображение на весь экран */
+    background-size: cover;
     background-attachment: fixed;
-    
     color: #1C1B1F;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -32,8 +31,6 @@ body {
     justify-content: center;
     overflow-x: hidden;
 }
-
-
 
 .container {
     max-width: 900px;
@@ -92,38 +89,11 @@ body {
 }
 
 /* Typography */
-h1 { 
-    margin: 0; 
-    font-size: 2.2rem; 
-    font-weight: 500; 
-    color: #1C1B1F; 
-}
-h2 { 
-    color: var(--md-sys-color-primary); 
-    margin-top: 40px; 
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-h3 { 
-    display: flex; 
-    align-items: center; 
-    gap: 12px; 
-    margin-top: 0; 
-    color: var(--md-sys-color-primary); 
-}
-h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #1C1B1F;
-}
-.subtitle { 
-    margin: 4px 0 0; 
-    font-size: 1.1rem; 
-    color: var(--md-sys-color-primary); 
-    font-weight: 500; 
-}
+h1 { margin: 0; font-size: 2.2rem; font-weight: 500; color: #1C1B1F; }
+h2 { color: var(--md-sys-color-primary); margin: 40px 0 24px 0; display: flex; align-items: center; gap: 12px; }
+h3 { display: flex; align-items: center; gap: 12px; margin-top: 0; color: var(--md-sys-color-primary); }
+h4 { margin: 0; font-size: 1.1rem; color: #1C1B1F; }
+.subtitle { margin: 4px 0 0; font-size: 1.1rem; color: var(--md-sys-color-primary); font-weight: 500; }
 
 /* Cards */
 .card {
@@ -147,12 +117,7 @@ h4 {
 }
 
 /* Chips & UI Elements */
-.chips { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 8px; 
-    margin-top: 12px; 
-}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .chip {
     background: var(--md-sys-color-primary);
     color: var(--md-sys-color-on-primary);
@@ -162,26 +127,11 @@ h4 {
     font-weight: 500;
 }
 
-.divider { 
-    border: none; 
-    border-top: 1px solid rgba(0,0,0,0.05); 
-    margin: 16px 0; 
-}
-
-.timeline-item .date { 
-    font-size: 0.85rem; 
-    opacity: 0.7; 
-    margin-bottom: 4px; 
-}
-.timeline-item .position { 
-    font-weight: 500; 
-    margin: 0; 
-}
+.timeline-item .date { font-size: 0.85rem; opacity: 0.7; margin-bottom: 4px; }
+.timeline-item .position { font-weight: 500; margin: 0; }
 
 /* Cases Section */
-.cases-section {
-    margin-top: 40px;
-}
+.cases-section { margin-top: 40px; }
 
 .cases-grid {
     display: grid;
@@ -197,7 +147,6 @@ h4 {
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid transparent;
-    transform-origin: center center; /* ключевой момент */
 }
 
 .case-card:hover {
@@ -233,24 +182,13 @@ h4 {
     object-fit: cover;
 }
 
-.case-title {
-    flex-grow: 1;
-}
+.case-title { flex-grow: 1; }
 
-.case-date {
-    font-size: 0.8rem;
-    color: var(--md-sys-color-outline);
-    margin-top: 4px;
-}
+.case-date { font-size: 0.8rem; color: var(--md-sys-color-outline); margin-top: 4px; }
 
-.expand-icon {
-    transition: transform 0.3s ease;
-    color: var(--md-sys-color-primary);
-}
+.expand-icon { transition: transform 0.3s ease; color: var(--md-sys-color-primary); }
 
-.case-card.active .expand-icon {
-    transform: rotate(180deg);
-}
+.case-card.active .expand-icon { transform: rotate(180deg); }
 
 .case-content {
     max-height: 0;
@@ -258,37 +196,17 @@ h4 {
     transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.case-card.active .case-content {
-    max-height: 500px;
-}
+.case-card.active .case-content { max-height: 500px; }
 
-.case-description {
-    padding: 0 16px 16px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-}
+.case-description { padding: 0 16px 16px; border-top: 1px solid rgba(0,0,0,0.05); }
 
-.case-description p {
-    margin-top: 0;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
+.case-description p { margin-top: 0; margin-bottom: 12px; line-height: 1.5; }
 
-.case-description ul {
-    margin: 12px 0;
-    padding-left: 20px;
-}
+.case-description ul { margin: 12px 0; padding-left: 20px; }
 
-.case-description li {
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
+.case-description li { margin-bottom: 8px; line-height: 1.4; }
 
-.case-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 16px;
-}
+.case-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 
 .tech-tag {
     background: rgba(103, 80, 164, 0.1);
@@ -320,16 +238,17 @@ h4 {
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
+/* Cases Header Card */
 .cases-header-card {
-    background: var(--md-sys-color-surface-variant); /* тот же фон, что у других карточек */
+    background: var(--md-sys-color-surface-variant);
     display: flex;
-    justify-content: center; /* центрируем контент по горизонтали */
-    align-items: center; /* по вертикали */
-    padding: 12px 24px; /* уменьшили padding для тонкости */
-    border-radius: var(--radius-medium); /* чуть меньше скругление, чтобы было элегантно */
-    margin: 0 auto 24px auto; /* центрирование самой карточки с отступом снизу */
-    max-width: 400px; /* ограничиваем ширину, чтобы не растягивалось */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* легкая тень для отделения */
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: var(--radius-medium);
+    margin: 0 auto 24px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .cases-header-card h2 {
@@ -341,21 +260,27 @@ h4 {
     gap: 8px;
 }
 
-
-
+/* Media Queries for Mobile */
 @media (max-width: 650px) {
-    .grid { 
-        grid-template-columns: 1fr; 
-    }
-    .cases-grid {
-        grid-template-columns: 1fr;
-    }
-    .header-main-content { 
-        flex-direction: column; 
-        text-align: center; 
-    }
-    .profile-card { 
-        flex-direction: column; 
-        gap: 20px; 
-    }
+    .grid { grid-template-columns: 1fr; gap: 16px; }
+    .cases-grid { grid-template-columns: 1fr; gap: 16px; }
+    .header-main-content { flex-direction: column; text-align: center; gap: 16px; }
+    .profile-card { flex-direction: column; gap: 20px; }
+    body { background-attachment: scroll; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 10px; }
+    .avatar-wrapper { width: 80px; height: 80px; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.2rem; }
+    h4 { font-size: 1rem; }
+    .subtitle { font-size: 0.95rem; }
+    .card { padding: 16px; }
+    .grid { gap: 12px; }
+    .cases-grid { gap: 12px; }
+    .header-main-content { gap: 12px; }
+    .case-header { flex-direction: column; align-items: flex-start; }
+    .case-image { width: 100%; height: auto; margin-bottom: 8px; }
 }
