@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <header class="card profile-card">
+            <div class="header-main-content">
+                <div class="avatar-wrapper">
+                    <img src="images/photo.jpg" alt="Serdarov Durdymyrad" class="profile-photo">
+                </div>
+                <div class="profile-info">
+                    <h1>Serdarov Durdymyrad</h1>
+                    <p class="subtitle">Automation Engineer</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="grid">
+            <section class="column">
+                <div class="card fade-in" style="animation-delay: 0.1s;">
+                    <h3><span class="material-symbols-outlined">person</span> About me</h3>
+                    <p>Automation Engineer focused on Web3, crypto, and sales-driven systems. I design and build bots and backend automation that replace manual operators, eliminate human error, and scale processes without increasing headcount.
+
+I've delivered end-to-end automation for engagement operations, token liquidation trading, and crypto sales analytics. My systems integrate multiple external services into a single orchestration layer, handle real-time decision logic, and expose full control through Telegram-based interfaces.
+
+I specialize in turning chaotic, manual, and emotionally driven workflows into deterministic, reproducible systems with measurable impact on efficiency, revenue, and operational scale.
+
+Core value: replacing people-dependent processes with automation that actually works under real production load.</p>
+                </div>
+            </section>
+
+            <section class="column">
+                <div class="card fade-in" style="animation-delay: 0.3s;">
+                    <h3><span class="material-symbols-outlined">work</span> Work experience</h3>
+                    <div class="timeline-item">
+                        <p class="date">05.2025 — Now</p>
+                        <p class="position">Web3 Automation Engineer in Influence Marketing Agency</p>
+                    </div>
+                </div>
+
+                <div class="card fade-in" style="animation-delay: 0.2s;">
+                    <h3><span class="material-symbols-outlined">code</span> Skills</h3>
+                    <div class="chips">
+                        <span class="chip">n8n</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">AI Agents</span>
+                        <span class="chip">API</span>
+                        <span class="chip">LLM</span>
+                        <span class="chip">DEFI</span>
+                        <span class="chip">API orchestration</span>
+                        <span class="chip">FastAPI</span>
+                        <span class="chip">Dexscreener</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Cases Section -->
+        <!-- Cases Section -->
+<section class="cases-section fade-in" style="animation-delay: 0.4s;">
+    <div class="card cases-header-card fade-in" style="animation-delay: 0.4s;">
+        <h2><span class="material-symbols-outlined">folder</span> Cases</h2>
+    </div>
+
+
+    <div class="cases-grid">
+
+        <!-- Case 1 -->
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-image">
+                    <img src="images/cases/nakrutka.webp" alt="Engagement Automation Bot">
+                </div>
+                <div class="case-title">
+                    <h4>Automation Bot for Engagement Services</h4>
+                    <p class="case-date">2025</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-description">
+                    <p>
+                        Engagement orders were placed manually through multiple third-party services.
+                        The process was slow, error-prone, and impossible to scale.
+                    </p>
+
+                    <ul>
+                        <li>Built a Telegram bot integrated with 5 external engagement services</li>
+                        <li>Unified all services under a single interface and orchestration logic</li>
+                        <li>Automated service selection, order submission, and execution tracking</li>
+                        <li>Completely removed manual operations from the workflow</li>
+                    </ul>
+
+                    <div class="case-tech">
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Process Orchestration</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+
+                    <p><strong>Key value:</strong> Replaced a human operator with a fully automated orchestration system.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-image">
+                    <img src="images/cases/trading_bot.jpg" alt="Token Liquidation Bot">
+                </div>
+                <div class="case-title">
+                    <h4>Automated Token Liquidation Trading Bot</h4>
+                    <p class="case-date">2025</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-description">
+                    <p>
+                        Token liquidation was handled manually, requiring constant chart monitoring
+                        and emotionally driven real-time decisions.
+                    </p>
+
+                    <ul>
+                        <li>Developed an automated trading bot for controlled token liquidation</li>
+                        <li>Implemented profit-oriented selling logic instead of blind market sells</li>
+                        <li>Wrapped full control, monitoring, and execution into a Telegram interface</li>
+                        <li>Removed the need for continuous manual supervision</li>
+                    </ul>
+
+                    <div class="case-tech">
+                        <span class="tech-tag">Dexscreener</span>
+                        <span class="tech-tag">Jupiter API</span>
+                        <span class="tech-tag">LIFI API</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">solders python library</span>
+                        <span class="tech-tag">web3 python library</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">Algorithmic Trading Logic</span>
+                    </div>
+
+                    <p><strong>Key value:</strong> Automated a financial process with direct impact on profit and risk reduction.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-image">
+                    <img src="images/cases/deal_hunter.jpg" alt="Sales Analytics Bot">
+                </div>
+                <div class="case-title">
+                    <h4>Sales Analytics & Token Discovery Bot</h4>
+                    <p class="case-date">2025</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-description">
+                    <p>
+                        Sales teams needed a constant stream of new crypto projects.
+                        Token research, competitor monitoring, and dev contact discovery were fully manual.
+                    </p>
+
+                    <ul>
+                        <li>Built a bot that automatically discovers new tokens</li>
+                        <li>Monitored competitor wallets for early token movements</li>
+                        <li>Parsed Telegram chats to identify admins and project developers</li>
+                        <li>Added X (Twitter) parsing and activity-based token ranking</li>
+                        <li>Prepared structured, sales-ready data for immediate outreach</li>
+                    </ul>
+
+                    <div class="case-tech">
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">Dexscreener API</span>
+                        <span class="tech-tag">Wallet Monitoring</span>
+                        <span class="tech-tag">X (Twitter) Scraping</span>
+                        <span class="tech-tag">Backend Automation</span>
+                    </div>
+
+                    <p><strong>Key value:</strong> Fully automated sales analytics and lead generation for crypto projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-image">
+                    <img src="images/cases/crm.jpg" alt="AI CRM Bot">
+                </div>
+                <div class="case-title">
+                    <h4>AI Bot for Natural Language CRM Management</h4>
+                    <p class="case-date">2025</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-description">
+                    <p>
+                        Sales teams avoided working with Pipedrive CRM due to its heavy interface,
+                        leading to missing or delayed data.
+                    </p>
+
+                    <ul>
+                        <li>Developed an AI-powered agent for CRM control via natural language</li>
+                        <li>Enabled creation and updating of deals and projects through chat commands</li>
+                        <li>Mapped user intent to CRM actions automatically</li>
+                        <li>Eliminated the need to interact with the CRM UI directly</li>
+                    </ul>
+
+                    <div class="case-tech">
+                        <span class="tech-tag">AI Agent</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Pipedrive API</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">Process Orchestration</span>
+                    </div>
+
+                    <p><strong>Key value:</strong> Replaced a complex CRM interface with a conversational AI layer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
