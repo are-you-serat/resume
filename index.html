@@ -50,6 +50,7 @@ Core value: replacing people-dependent processes with automation that actually w
                     <div class="chips">
                         <span class="chip">n8n</span>
                         <span class="chip">Python</span>
+                        <span class="chip">Typescript</span>
                         <span class="chip">AI Agents</span>
                         <span class="chip">API</span>
                         <span class="chip">LLM</span>
@@ -57,6 +58,14 @@ Core value: replacing people-dependent processes with automation that actually w
                         <span class="chip">API orchestration</span>
                         <span class="chip">FastAPI</span>
                         <span class="chip">Dexscreener</span>
+                    </div>
+                </div>
+
+                <div class="card fade-in" style="animation-delay: 0.4s;">
+                    <h3><span class="material-symbols-outlined">public</span> Others</h3>
+                    <div class="info-item">
+                        <p><strong>Location:</strong> Kazan, GMT +3</p>
+                        <p><strong>Languages:</strong> Russian (Native), English (B2), Turkmen (Native)</p>
                     </div>
                 </div>
             </section>
@@ -235,6 +244,103 @@ Core value: replacing people-dependent processes with automation that actually w
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="cases-section fade-in" style="animation-delay: 0.5s; margin-top: 50px;">
+    <div class="card cases-header-card fade-in" style="animation-delay: 0.5s;">
+        <h2><span class="material-symbols-outlined">terminal</span> For technical teams</h2>
+    </div>
+
+    <div class="cases-grid">
+
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-title">
+                    <h4>Multi-Service API Orchestrator (SMM)</h4>
+                    <p class="case-date">System Architecture</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="case-content">
+                <div class="case-description">
+                    <p>Designed a unified abstraction layer over 5+ heterogeneous SMM provider APIs with inconsistent schemas and rate limits.</p>
+                    <ul>
+                        <li>Implemented a centralized polling and webhook processing logic in n8n/FastAPI.</li>
+                        <li>Built a routing engine that selects providers based on real-time endpoint availability and cost.</li>
+                        <li>Standardized error handling and state synchronization across distributed services.</li>
+                    </ul>
+                    <p><strong>Stack:</strong> Webhook listeners, JSON-Schema mapping, Async Request handling.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-title">
+                    <h4>Web3 Liquidation & Swap Engine</h4>
+                    <p class="case-date">DeFi Engineering</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="case-content">
+                <div class="case-description">
+                    <p>Automated non-custodial token swaps using Solana/EVM aggregation protocols (Jupiter, LI.FI).</p>
+                    <ul>
+                        <li>Integrated LI.FI TypeScript SDK for cross-chain bridging and high-level swap abstraction.</li>
+                        <li>Utilized solder` and web3.py for low-level transaction signing and direct RPC interaction.</li>
+                        <li>Developed a logic-based execution controller (Price Impact monitoring, Slippage control).</li>
+                        <li>Implemented real-time WebSocket monitoring for price action triggers and execution status.</li>
+                    </ul>
+                    <p><strong>Stack:</strong> LI.FI SDK (TypeScript), Python (Web3.py), RPC Management, Cross-chain Aggregators.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-title">
+                    <h4>OSINT & Data Mining Pipeline</h4>
+                    <p class="case-date">Data Engineering</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="case-content">
+                <div class="case-description">
+                    <p>Built a scalable scraping and monitoring pipeline for X (Twitter) and Telegram data extraction.</p>
+                    <ul>
+                        <li>Developed wallet-tracking monitors for large-scale transaction analysis (Whale watching).</li>
+                        <li>Implemented regex-based and LLM-assisted entity extraction from unstructured chat data.</li>
+                        <li>Developed a classification system using vector embeddings and cosine similarity to filter and categorize projects based on semantic relevance.</li>
+                        <li>Automated lead scoring through multi-source data correlation.</li>
+                    </ul>
+                    <p><strong>Stack:</strong> Scraping, Vector DB (Qdrant/Chroma), OpenAI Embeddings, Async IO.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-card">
+            <div class="case-header" onclick="toggleCase(this)">
+                <div class="case-title">
+                    <h4>LLM-Driven Middleware for SaaS</h4>
+                    <p class="case-date">AI Implementation</p>
+                </div>
+                <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </div>
+            <div class="case-content">
+                <div class="case-description">
+                    <p>Created a Natural Language Interface (NLI) layer between Telegram and Pipedrive REST API.</p>
+                    <ul>
+                        <li>Engineered an autonomous AI Agent utilizing Tool Calling to dynamically interact with CRM endpoints.</li>
+                        <li>Implemented long-term thread memory and session state persistence using MongoDB.</li>
+                        <li>Built a context-aware conversation logic to handle complex, multi-step CRM operations through natural dialogue.</li>
+                        <li>Integrated secure user authentication and permission mapping via Telegram ID.</li>
+                    </ul>
+                    <p><strong>Stack:</strong> LLM Tool Calling, MongoDB (Memory), Prompt Engineering, Pipedrive API.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
     </div>
