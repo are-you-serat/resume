@@ -47,6 +47,13 @@ body {
     width: 100%;
 }
 
+/* Remove mobile tap highlight */
+.case-header,
+.case-card {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 /* Links */
 a {
     color: #a78bfa;
@@ -86,10 +93,12 @@ a:hover {
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(167, 139, 250, 0.5);
-    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+@media (hover: hover) {
+    .profile-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(167, 139, 250, 0.5);
+        box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+    }
 }
 
 .header-main-content {
@@ -144,10 +153,12 @@ h4 { margin: 0; font-size: 1.1rem; color: #f1f0f5; }
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(167, 139, 250, 0.5);
-    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(167, 139, 250, 0.5);
+        box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+    }
 }
 
 /* Layout Grid */
@@ -193,10 +204,12 @@ h4 { margin: 0; font-size: 1.1rem; color: #f1f0f5; }
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.case-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(167, 139, 250, 0.5);
-    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+@media (hover: hover) {
+    .case-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(167, 139, 250, 0.5);
+        box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+    }
 }
 
 .case-header {
