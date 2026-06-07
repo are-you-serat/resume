@@ -1,7 +1,8 @@
 function toggleCase(header) {
     const caseCard = header.closest('.case-card');
+    const section = caseCard.closest('.cases-section');
 
-    document.querySelectorAll('.case-card').forEach(card => {
+    section.querySelectorAll('.case-card').forEach(card => {
         if (card !== caseCard) {
             card.classList.remove('active');
         }
