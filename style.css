@@ -266,8 +266,9 @@ h4 { margin: 0; font-size: 1.1rem; color: #f1f0f5; }
 .case-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 
 .tech-tag {
-    background: rgba(103, 80, 164, 0.1);
-    color: var(--md-sys-color-primary);
+    background: rgba(103, 80, 164, 0.15);
+    color: #c4b5fd;
+    border: 1px solid rgba(103, 80, 164, 0.3);
     padding: 4px 12px;
     border-radius: var(--radius-small);
     font-size: 0.8rem;
