@@ -263,7 +263,7 @@ h4 { margin: 0; font-size: 1.1rem; color: #f1f0f5; }
 
 .case-description li { margin-bottom: 8px; line-height: 1.4; }
 
-.case-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.case-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; margin-bottom: 16px; }
 
 .tech-tag {
     background: rgba(103, 80, 164, 0.15);
